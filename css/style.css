@@ -1,0 +1,114 @@
+@import url(reset.css);
+
+body {
+	font: 13px/1.4 Arial, Verdana, Tahoma Sans-Serif;
+	background-image: url(../images/main-bg.jpg);
+}
+
+a {
+	text-decoration: none;
+	color: #5e5e5e;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+#header {
+	min-width: 960px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fcfcfc;
+}
+
+#logo {
+	width: 241px;
+	height: 46px;
+	float: left;
+	margin-top: 44px;
+	margin-bottom: 42px;
+	margin-left: 10px;
+}
+
+#banner {
+	float: right;
+	width: 468px;
+	height: 60px;
+	margin-top: 34px;
+	margin-right: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+#top-menu {
+	background-image: linear-gradient(to bottom, #2d2d2d 0%, #323232 66%, #424040 100%);
+	min-width: 960px;
+}
+
+#inner-menu {
+	min-width: 960px;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#inner-menu ul li {
+	float: left;
+	text-transform: uppercase;
+}
+
+#inner-menu a {
+	color: #ebebeb;
+	font-size: 12px;
+	padding: 16px 15px;
+	display: block;
+}
+
+#inner-menu a:hover {
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+}
+
+#wrapper {
+	min-width: 960px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#sidebar {
+	width: 300px;
+	float: right;
+}
+
+#content {
+	margin-right: 300px;
+}
+
+.post {
+
+}
+
+.thumbnail {
+	float: left;
+	margin-right: 20px;
+	border: 3px solid #e0e0e0;
+}
+
+.thumbnail img {
+	display: block;
+}
+
+.post-content {
+
+}
+
+.post-cotegories, .post-published {
+	font-family: Georgia, sans-serif;
+	color: #aaaaaa;
+}
