@@ -3,6 +3,7 @@
 body {
 	font: 13px/1.4 Arial, Verdana, Tahoma Sans-Serif;
 	background-image: url(../images/main-bg.jpg);
+	color: #5e5e5e;
 }
 
 a {
@@ -14,8 +15,14 @@ a:hover {
 	text-decoration: underline;
 }
 
+p {
+	margin: 8px 0 13px 0;
+}
+
 h2 {
 	font-size: 18px;
+	line-height: 1.1;
+	margin-bottom: 5px;
 }
 
 #header {
@@ -75,10 +82,61 @@ h2 {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
 }
 
-#wrapper {
+#wrapper,
+.footer-container,
+.copyright-container {
 	min-width: 960px;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-container h3 {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.footer a {
+	color: #e0e0e0;
+	font-size: 13px;
+}
+
+.footer-about {
+	width: 300px;
+}
+
+.footer-about img {
+	margin-bottom: 14px;}
+
+.footer-about p {
+	color: #e0e0e0;
+	font-size: 13px;
+	margin-bottom: 23px;
+}
+
+.footer-posts {
+	width: 250px;
+}
+
+.footer-list-center li {
+	border-bottom: 1px dashed #000;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.footer-archives {
+	width: 250px;
+}
+
+.footer-list-right li {
+	border-bottom: 1px dashed #000;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 #sidebar {
@@ -88,16 +146,20 @@ h2 {
 
 #content {
 	margin-right: 300px;
+	padding: 15px 40px 0 10px;
 }
 
 .post {
-
+	border-bottom: 1px dashed #e5e5e5;
+	overflow: hidden;
+	margin-top: 15px;
 }
 
 .thumbnail {
 	float: left;
 	margin-right: 20px;
 	border: 3px solid #e0e0e0;
+	margin-bottom: 15px;
 }
 
 .thumbnail img {
@@ -105,10 +167,180 @@ h2 {
 }
 
 .post-content {
-
+	margin-left: 180px;
 }
 
 .post-cotegories, .post-published {
 	font-family: Georgia, sans-serif;
 	color: #aaaaaa;
+	margin: 0 0 3px 0;
+}
+
+#sidebar h3{
+	color: #999999;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	background: url("../images/sidebar-h3.png") repeat-x 0 6px;
+	padding-left: 22px;
+	margin-top: 26px;
+	margin-bottom: 25px;
+}
+
+#sidebar h3 span {
+	background: url("../images/main-bg.jpg");
+	padding: 0 7px;
+}
+
+/*search*/
+.search {
+	display: flex;
+}
+
+.search input {
+	width: 140px;
+	height: 30px;
+	-webkit-appearance: none;
+	padding: 0 0 0 13px;
+	margin: 0;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px 0 0 4px;
+	background-image: linear-gradient( to top, rgb(255,255,255) 50%, rgb(229,229,229) 100%);
+	font-size: 12px;
+	color: #b1b1b1;
+}
+
+.search button {
+	height: 30px;
+	border: none;
+	padding: 0;
+	width: 80px;
+	color: #cdcdcd;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #3c3c3c;
+	border-radius: 0 4px 4px 0;
+}
+
+
+/*search end*/
+
+#sidebar form {
+	width: 220px;
+	margin: 0 auto;
+}
+
+#search-form {
+	margin-bottom: 25px;
+}
+
+#sponsors h3 {
+	margin-bottom: 25px;
+}
+
+#sponsors ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#sponsors ul li {
+	margin-bottom: 15px;
+}
+
+#sponsors ul li:nth-child(3) {
+	margin-bottom: 0;
+}
+
+#sponsors ul li:nth-child(4) {
+	margin-bottom: 0;
+}
+
+#sponsors ul img {
+	display: block;
+}
+
+#cotegories ul {
+	column-count: 2;
+}
+
+#cotegories ul li {
+	border-bottom: 1px dashed #dfdfdf;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	break-inside: avoid;
+}
+
+#cotegories ul a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #5e5e5e;
+}
+
+.pagination {
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.pagination li {
+	margin-right: 2px;
+}
+
+.pagination li a {
+	border-bottom: 3px solid #cccccc;
+	padding: 10px 15px;
+	display: block;
+}
+
+.pagination li a.active {
+	border-color: #333333;
+	background-color: #333333;
+	color: #d4d4d4;
+}
+
+.pagination a:hover {
+	background-color: #e7e7e7;
+	text-decoration: none;
+}
+
+.footer {
+	background: url("../images/footer-bg.png");
+	padding-top: 76px;
+	height: 520px;
+}
+
+.footer h3 {
+	background: url("../images/footer-title-bg.png") repeat-x left center;
+	margin-bottom: 20px;
+	width: 220px;
+}
+
+.footer h3 span {
+	display: inline-block;
+	background-color: #292929;
+	padding-right: 13px;
+}
+
+.copyright {
+	background: url("../images/copyright-bg.png") repeat;
+}
+
+.copyright-container {
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright-text,
+.copyright-powered {
+	color: #e0e0e0;
+	font-size: 13px;
+}
+
+.copyright-text span,
+.copyright-powered span {
+	color: #8f8f8f;
+	font-size: 13px;
 }
